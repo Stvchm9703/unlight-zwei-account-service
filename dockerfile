@@ -2,7 +2,7 @@ FROM apline
 WORKDIR /app
 COPY ./account_server ./ 
 COPY ./insecure ./insecure
-COPY config.yaml .
+COPY ./config.test_server.yaml ./config.yaml
 EXPOSE 12000
 
 ENTRYPOINT ["account_server"]
