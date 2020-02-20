@@ -23,8 +23,8 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "room_auth",
-	Short: "room_auth, go grpc auth server",
+	Use:   "accountserver",
+	Short: "accountserver, go grpc auth server",
 	Long: `
 --------------------------------------------------------
 Auth Server, for IDCT-Project grpc auth service 

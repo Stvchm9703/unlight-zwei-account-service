@@ -28,3 +28,6 @@ $(CURDIR)/vendor/ \
 
 	# ## Generate static assets for OpenAPI UI
 	# statik -m -f -src third_party/OpenAPI/
+
+build:
+	go build -o accountserver main.go
