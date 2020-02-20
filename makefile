@@ -30,4 +30,8 @@ $(CURDIR)/vendor/ \
 	# statik -m -f -src third_party/OpenAPI/
 
 build:
-	go build -o accountserver main.go
+	go build -o account_server main.go
+
+docker_build:
+	go build -o account_server main.go
+	docker-compose build 

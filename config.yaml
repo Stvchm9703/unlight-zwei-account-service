@@ -37,7 +37,7 @@ cache_db:
 
 auth_server:
   conn_type: grpc
-  ip: 192.168.0.102
+  ip: 192.168.0.110
   port: 12000
   max_pool_size: 1
   api_refer_type: proto
