@@ -1,3 +1,8 @@
+#env :
+LOGPATH = ./.log
+LOGFILE = $(LOGPATH)/$(shell date --iso=seconds).log
+
+# ###############################################
 generate_vcred:
 	protoc \
 		-I proto/ \
@@ -35,3 +40,6 @@ build:
 docker_build:
 	go build -o account_server main.go
 	docker-compose build 
+
+test_run:
+	go run main.go start -c=config.test_server.yaml -m=test > $(LOGFILE) 2>&1 &
